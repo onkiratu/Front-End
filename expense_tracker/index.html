@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-actions {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Expense Tracker Application</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome to the Expense Tracker Application</h2>
+        <p>Manage your expenses efficiently and effectively using our application. Register below to get started.</p>
+
+        <h3>Registration Form</h3>
+        <form action="/submit_registration" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Register</button>
+                <button type="reset">Cancel</button>
+            </div>
+        </form>
+
+        <h3>User Information</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr>
+                <td>Onesmas Kiratu</td>
+                <td>onesmas@kiratu.com</td>
+                <td>+254777333222</td>
+            </tr>
+            <tr>
+                <td>John Otieno</td>
+                <td>john@otieno.com</td>
+                <td>+254888999666</td>
+            </tr>
+        </table>
+
+        <h3>Our Team</h3>
+        <img src="IT_team.jpg" alt="Team Photo" width="400">
+
+        <p>For more information, visit <a href="https://google.com" target="_blank">Google</a>.</p>
+    </div>
+</body>
+</html>
